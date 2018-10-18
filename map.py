@@ -1,3 +1,5 @@
+from items import *
+
 room_reception = {
     "name": "Reception",
 
@@ -9,9 +11,9 @@ seems to be playing an old school text-based adventure
 game on his computer. There are corridors leading to the
 south and east. The exit is to the west.""",
 
-    "exits": {"south": "Admins",
-              "east": "Tutor",
-              "west": "Parking"}
+    "exits": {"south": "Admins", "east": "Tutor", "west": "Parking"},
+
+    "items": [item_biscuits, item_handbook]
 }
 
 room_admins = {
@@ -22,7 +24,9 @@ room_admins = {
 room. Inside you notice Matt "MJ" John and Simon Jones. They
 ignore you. To the north is the reception.""",
 
-    "exits": {"north":"Reception"}
+    "exits":  {"north": "Reception"},
+
+    "items": []
 }
 
 room_tutor = {
@@ -34,7 +38,9 @@ stares at his huge monitor, ignoring you completely.
 On the desk you notice a cup of coffee and an empty
 pack of biscuits. The reception is to the west.""",
 
-    "exits":{"east":"Reception"}
+    "exits": {"west": "Reception"},
+
+    "items": []
 }
 
 room_parking = {
@@ -45,8 +51,9 @@ room_parking = {
 You can go south to the COMSC reception, or east to the
 general office.""",
 
-    "exits":{"south":"Reception",
-             "east":"Office"}
+    "exits": {"east": "Office", "south": "Reception"},
+
+    "items": []
 }
 
 room_office = {
@@ -58,7 +65,9 @@ room_office = {
 in their eyes. If you go west you can return to the
 Queen's Buildings.""",
 
-    "exits":{"west":"Parking"}
+    "exits": {"west": "Parking"},
+
+    "items": [item_pen]
 }
 
 
